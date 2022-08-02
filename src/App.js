@@ -1,13 +1,16 @@
 import React from 'react';
-import SearchForm from './components/SearchForm';
-import CharacterInfo from './components/CharacterInfo';
+import { Switch, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import NotFound from './Pages/NotFound';
+import CharacterDetails from './components/CharacterDetails';
 
 function App() {
   return (
-    <div className="App">
-      <SearchForm />
-      <CharacterInfo />
-    </div>
+    <Switch>
+      <Route exact path="/" component={ Home } />
+      <Route path="/character/:id" component={ CharacterDetails } />
+      <Route path="*" component={ NotFound } />
+    </Switch>
   );
 }
 
