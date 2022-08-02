@@ -1,7 +1,7 @@
 const APIURL = 'https://thronesapi.com/api/v2/Characters/'
 
-const charAPI = (char) => (
-  fetch(`${APIURL}${char}`)
+const charAPI = (id) => (
+  fetch(`${APIURL}${id}`)
     .then((response) => (
       response
         .json()
