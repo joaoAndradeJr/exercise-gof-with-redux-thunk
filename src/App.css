@@ -1,0 +1,20 @@
+h1 {
+  color: rgb(52, 52, 52);
+  font-size: xx-large;
+}
+
+.main-details-page {
+  align-items: center;
+  display: flex;
+  height: 45rem;
+  justify-content: center;
+  width: 90%;
+}
+
+
+.details-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
