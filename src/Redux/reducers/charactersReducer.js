@@ -1,5 +1,5 @@
 const INITIAL_STATE = {
-  characters: [],
+  characterDetails: undefined,
 };
 
 function charactersReducer(state = INITIAL_STATE, action) {
